@@ -1,0 +1,19 @@
+npm install init 
+npm install body-parser 
+		express 
+		cors
+		mongodb 
+		react-router-dom 
+		fs
+		npm install @mui/icons-material
+		npm install @mui/material @emotion/react @emotion/styled
+		axios
+		npm install jquery popper.js
+		npm install bootstrap
+		npx create-react-app [project name]
+
+
+
+**Optional**
+npm i react-icons
+npm i react-easy-swipe
