@@ -19,7 +19,7 @@ $(function(){
       clearInterval(b);
       $(".loader-container").css("display","none");
     }
-  },30);
+  },20);
 })
 
 
