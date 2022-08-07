@@ -30,3 +30,11 @@
   background-color: #1abc9c;
   color: white;
 }
+
+::placeholder{
+  color: white;
+  opacity: 1;
+}
+::-ms-input-placeholder{
+  color: white;
+}

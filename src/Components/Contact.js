@@ -12,26 +12,6 @@ export default function Contact() {
   const [number,setNumber] = useState(null);
   const [message,setMessage] = useState(null);
 
-  const inputs = document.querySelectorAll(".input");
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value === "") {
-    parent.classList.remove("focus");
-  }
-}
-
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});
-
 
   const handleInputChange = (e) => {
     const {id , value} = e.target;
@@ -117,24 +97,16 @@ const handleSubmit = (e) =>{
           <form onSubmit={handleSubmit} autocomplete="off" className='form1'>
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" id="name" class="input" />
-              <label for="">Name</label>
-              <span>Name</span>
+              <input type="text" name="name" placeholder="Name: John Doe" id="name" class="input" value={name}  onChange = {handleInputChange}/>
             </div>
             <div class="input-container">
-              <input type="email" name="email"  id="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
+              <input type="email" name="email" placeholder="Email: example@domain.com"  id="email" class="input" value={email}  onChange = {handleInputChange}/>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone"  id="phone" pattern="[1-9]{1}[0-9]{9}" title="Must contain a 10 Digit Number" maxlength='10' class="input" />
-              <label for="">Phone Number</label>
-              <span>Phone Number</span>
+              <input type="tel" name="phone"  id="phone" placeholder="Phone Number: 9876XXXXXX" pattern="[0-9]{10}" value={number} onChange = {handleInputChange} title="Must contain a 10 Digit Number" maxlength='10' class="input" />
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input" id="message"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
+              <textarea name="message" class="input" placeholder="Message" id="message" value={message} onChange = {handleInputChange}></textarea>
             </div>
             <input type="submit" value="Send" class="btn1" />
           </form>
@@ -314,18 +286,6 @@ textarea.input {
   right: 50%;
 }
 
-.input-container.focus label {
-  top: 0;
-  transform: translateY(-50%);
-  left: 155px;
-  font-size: 0.8rem;
-}
-
-.input-container.focus span:before,
-.input-container.focus span:after {
-  width: 50%;
-  opacity: 1;
-}
 
 .contact-info {
   padding: 2.3rem 2.2rem;
