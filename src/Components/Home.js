@@ -20,7 +20,7 @@ export default function Home() {
     <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="4" aria-label="Slide 3"></button>
   </div>
-  
+
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="5000" data-touch='true'>
       <img src={img1} className="d-block w-100" alt="..."/>
@@ -50,14 +50,6 @@ export default function Home() {
 </div>
 
         <Footer/>
-        <style>{`
-        .active{
-          color: #40a7d6;
-        }
-          .carousel-item{
-            
-          }
-        `}</style>
     </div>
   )
 }
