@@ -10,14 +10,14 @@
 .loader-container {
   width: 100%;
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: #1abc9c;
 }
 
 .loader-container .loader h1{
   top: 50%;
   transform: translate(-50%,-50%);
   position: fixed;
-  color: #1abc9c;
+  color: white;
   left: 50%;
   font-size: 100px;
   font-weight: 900;

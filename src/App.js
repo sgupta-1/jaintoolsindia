@@ -20,13 +20,13 @@ $(function(){
       clearInterval(b);
       $(".loader-container").css("display","none");
     }
-  },20);
+  },40);
 })
 
 
 function App() {
   return (
-    <>
+    <div>
     <div class="loader-container">
         <div class="loader"><h1><span class="counted">0</span>%</h1></div>
       </div>
@@ -38,7 +38,7 @@ function App() {
         <Route exact path="/contact-us" element={<Contact />} />
       </Routes>
     </Router>
-    </>
+    </div>
   );
 }
 
