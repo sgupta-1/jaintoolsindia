@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     counter++;
     a++;
-    if(counter ==101){
+    if(counter ===101){
       clearInterval(b);
       $(".loader-container").css("display","none");
     }
