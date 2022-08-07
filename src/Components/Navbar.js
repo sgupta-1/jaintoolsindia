@@ -16,21 +16,21 @@ export default function Navbar() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <NavLink className="nav-link" aria-current="page" to={'/'} style={({ isActive }) => ({color: isActive ? '#40a7d6' : '#000'})}>Home</NavLink>
+                    <NavLink className="nav-link" aria-current="page" to={'/'} style={({ isActive }) => ({color: isActive ? '#14927b' : '#000'})}>Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={'/about-us'} style={({ isActive }) => ({color: isActive ? '#40a7d6' : '#000'})}>About Us</NavLink>
+                    <NavLink className="nav-link" to={'/about-us'} style={({ isActive }) => ({color: isActive ? '#14927b' : '#000'})}>About Us</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={'/products'} style={({ isActive }) => ({color: isActive ? '#40a7d6' : '#000'})}>Products</NavLink>
+                    <NavLink className="nav-link" to={'/products'} style={({ isActive }) => ({color: isActive ? '#14927b' : '#000'})}>Products</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to={'/contact-us'} style={({ isActive }) => ({color: isActive ? '#40a7d6' : '#000'})}>Contact Us</NavLink>
+                    <NavLink className="nav-link" to={'/contact-us'} style={({ isActive }) => ({color: isActive ? '#14927b' : '#000'})}>Contact Us</NavLink>
                   </li>
                 </ul>
                 <form className="d-flex" role="search">
                   <input className="form-control me-2" type="search" placeholder="Search..." aria-label="Search"/>
-                  <button className="btn btn-outline-success" type="submit">Search</button>
+                  <button className="btn btn-outline-success btn0" type="submit">Search</button>
                 </form>
               </div>
             </div>

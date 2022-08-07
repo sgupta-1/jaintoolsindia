@@ -20,3 +20,13 @@
   font-size: 100px;
   font-weight: 900;
 }
+
+.btn0{
+  color: #149279;
+  font-weight: 500;
+  border-color: #149279;
+}
+.btn0:hover,.btn0:focus{
+  background-color: #1abc9c;
+  color: white;
+}
