@@ -75,7 +75,7 @@ const handleSubmit = (e) =>{
     <div>
       
       <Navbar/>
-      <div class="container">
+      <div class="container1">
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -145,7 +145,7 @@ const handleSubmit = (e) =>{
 
 
       <style>{
-        `.container {
+        `.container1 {
   position: relative;
   width: 100%;
   min-height: 80vh;
