@@ -1,4 +1,3 @@
-body.loading{overflow:hidden}
 
 .nav-link{
   font-weight: 500;
@@ -22,8 +21,6 @@ body.loading{overflow:hidden}
   left: 50%;
   font-size: 100px;
   font-weight: 900;
-  overflow-y: hidden !important;
-  -webkit-scrollbar: none;
 }
 
 .btn0{

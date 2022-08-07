@@ -6,7 +6,8 @@ import Home from "./Components/Home";
 import Products from "./Components/Products";
 import $ from 'jquery';
 
-$(document).ready(function(){
+
+$(function(){
   var counter = 0;
   var a = 0;
   var b = setInterval(function(){

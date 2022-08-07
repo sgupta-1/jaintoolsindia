@@ -41,18 +41,18 @@ const handleSubmit = (e) =>{
   const newPostKey = push(child(ref(database), 'posts')).key;
   const updates = {};
   updates['/' + newPostKey] = obj
-  // setName('')
-  // setEmail('')
-  // setNumber('')
-  // setMessage('')
-  // alert('Form Submitted...')
+  setName('')
+  setEmail('')
+  setNumber('')
+  setMessage('')
+  alert('Form Submitted...')
   return update(ref(database), updates);
 }
 
 
   return (
     
-    <div>
+    <>
       
       <Navbar/>
       <div class="container1">
@@ -401,7 +401,7 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container1 {
     padding: 1.5rem;
   }
 
@@ -413,7 +413,7 @@ textarea.input {
     display: none;
   }
 
-  form,
+  .form1,
   .contact-info {
     padding: 1.7rem 1.6rem;
   }
@@ -447,7 +447,7 @@ textarea.input {
   }`
   }
       </style>
-    </div>
+    </>
       
   )
 }
