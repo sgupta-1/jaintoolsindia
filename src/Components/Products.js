@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import img1 from "../img/cutter wheel.png";
-import img2 from "../img/goti handle.png";
-import img3 from "../img/hacksaw.png";
-import img4 from "../img/hammer.png";
-import img5 from "../img/inch tape.png";
-import img6 from "../img/kitchen knife.png";
+import img1 from "../img/products/cutter wheel.png";
+import img2 from "../img/products/goti handle.png";
+import img3 from "../img/products/hacksaw.png";
+import img4 from "../img/products/hammer.png";
+import img5 from "../img/products/inch tape.png";
+import img6 from "../img/products/kitchen knife.png";
 // import img1 from "../img/My project.png";
 // import img1 from "../img/My project.png";
 // import img1 from "../img/My project.png";
