@@ -10,13 +10,16 @@
 .loader-container {
   width: 100%;
   height: 100vh;
+  position: relative;
   background-color: #1abc9c;
+  -ms-overflow-style: none;
 }
+
 
 .loader-container .loader h1{
   top: 50%;
   transform: translate(-50%,-50%);
-  position: fixed;
+  position: absolute;
   color: white;
   left: 50%;
   font-size: 100px;

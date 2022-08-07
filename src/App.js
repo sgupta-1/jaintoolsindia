@@ -27,8 +27,10 @@ $(function(){
 function App() {
   return (
     <div>
-    <div class="loader-container">
-        <div class="loader"><h1><span class="counted">0</span>%</h1></div>
+      <div class="loader-container" id="load">
+        <div class="loader">
+          <h1><span class="counted">0</span>%</h1>
+        </div>
       </div>
     <Router>
       <Routes>
