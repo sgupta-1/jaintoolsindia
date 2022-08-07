@@ -97,16 +97,16 @@ const handleSubmit = (e) =>{
           <form onSubmit={handleSubmit} autocomplete="off" className='form1'>
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" placeholder="Name: John Doe" id="name" class="input" value={name}  onChange = {handleInputChange}/>
+              <input type="text" name="name" placeholder="Name: John Doe" pattern="[a-zA-Z][a-zA-Z ]{3,}" lang='en' id="name" class="input" value={name}  onChange={handleInputChange} required/>
             </div>
             <div class="input-container">
-              <input type="email" name="email" placeholder="Email: example@domain.com"  id="email" class="input" value={email}  onChange = {handleInputChange}/>
+              <input type="email" autocapitalize="off" spellcheck="false" autocorrect="off" lang='en' name="email" placeholder="Email: example@domain.com"  id="email" class="input" value={email}  onChange={handleInputChange} required/>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone"  id="phone" placeholder="Phone Number: 9876XXXXXX" pattern="[0-9]{10}" value={number} onChange = {handleInputChange} title="Must contain a 10 Digit Number" maxlength='10' class="input" />
+              <input type="tel" name="number" id="number" placeholder="Phone Number: 9876XXXXXX" pattern="[0-9]{10}" value={number} onChange={handleInputChange} title="Must contain a 10 Digit Number" maxlength='10' class="input"  required/>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input" placeholder="Message" id="message" value={message} onChange = {handleInputChange}></textarea>
+              <textarea name="message" lang='en' class="input" placeholder="Message" id="message" value={message} onChange={handleInputChange} required></textarea>
             </div>
             <input type="submit" value="Send" class="btn1" />
           </form>
