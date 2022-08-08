@@ -1,17 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import img1 from "../img/carousel/1.jpg";
+import img1 from "../img/carousel/5.jpg";
 import img2 from "../img/carousel/2.jpg";
-import img3 from "../img/carousel/3.jpg";
-import img4 from "../img/carousel/6.jpg";
-import img5 from "../img/carousel/5.jpg";
+import img3 from "../img/carousel/7.jpg";
+import img4 from "../img/carousel/8.jpg";
+import img5 from "../img/carousel/9.jpg";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-
       <div
         id="carouselDark"
         className="carousel carousel-light carousel-fade slide"
@@ -90,7 +89,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );

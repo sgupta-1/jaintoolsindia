@@ -1,9 +1,8 @@
-
-.nav-link{
+.nav-link {
   font-weight: 500;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-weight: 500;
 }
 
@@ -15,25 +14,25 @@
   -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar
-{
-  width: 10px;  /* for vertical scrollbars */
+::-webkit-scrollbar {
+  width: 10px; /* for vertical scrollbars */
   height: 10px; /* for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169); 
+  box-shadow: inset 0 0 8px rgb(90, 189, 169);
+  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgba(18, 160, 132, 0.5); 
+  background-color: rgba(18, 160, 132, 0.5);
 }
 
-.loader-container .loader h1{
+.loader-container .loader h1 {
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   color: white;
   left: 50%;
@@ -41,20 +40,44 @@
   font-weight: 900;
 }
 
-.btn0{
+.btn0 {
   color: #149279;
   font-weight: 500;
   border-color: #149279;
 }
-.btn0:hover,.btn0:focus{
+.btn0:hover,
+.btn0:focus {
   background-color: #1abc9c;
   color: white;
 }
 
-::placeholder{
+::placeholder {
   color: white;
   opacity: 1;
 }
-::-ms-input-placeholder{
+::-ms-input-placeholder {
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  /* For Laptops */
+  .carousel {
+    height: 650px;
+  }
+
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* For Large Laptops */
+  .carousel {
+    height: 650px;
+  }
+
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
 }
