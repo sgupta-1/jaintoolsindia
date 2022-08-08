@@ -357,6 +357,7 @@ export default function Products() {
                 Category
               </h6>
               <h4 className="card-title">Allen Key</h4>
+              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
               <button type="button" className="btn btn-light-blue btn-md">
                 View More
               </button>
