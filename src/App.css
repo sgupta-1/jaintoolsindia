@@ -94,12 +94,10 @@
   background-color: #f6f6f6;
 }
 .aboutus .logo-small {
-  color: #f4511e;
   font-size: 50px;
 }
 .aboutus .logo {
-  color: #f4511e;
-  font-size: 200px;
+  height: 400px;
 }
 .aboutus .thumbnail {
   padding: 0 0 15px 0;
@@ -110,16 +108,6 @@
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-}
-.aboutus .carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: #f4511e;
-}
-.aboutus .carousel-indicators li {
-  border-color: #f4511e;
-}
-.aboutus .carousel-indicators li.active {
-  background-color: #f4511e;
 }
 .aboutus .item h4 {
   font-size: 19px;
@@ -168,10 +156,15 @@
     width: 100%;
     margin-bottom: 35px;
   }
+  .aboutus .logo {
+    margin-top: 100px;
+    height: 200px;
+  }
 }
 @media screen and (max-width: 480px) {
   .aboutus .logo {
-    font-size: 150px;
+    margin: -5px 0px;
+    height: 120px;
   }
 }
 
