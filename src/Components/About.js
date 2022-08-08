@@ -4,18 +4,16 @@ import Footer from './Footer'
 import $ from 'jquery'
 import logo from '../img/logo.png'
 
-
-$(window).scroll(function() {
-  $(".slideanim").each(function(){
+$(window).scroll(function () {
+  $(".slideanim").each(function () {
     var pos = $(this).offset().top;
 
     var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("slide");
-      }
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
   });
 });
-
 
 export default function About() {
   return (
@@ -120,7 +118,7 @@ export default function About() {
   </div>
 </div>
 
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }

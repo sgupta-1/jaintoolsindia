@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div className="container">
-        <footer className="py-3 my-4">
+        <footer className="py-3 my-4 text-uppercase">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">
             <li className="nav-item">
               <NavLink to={"/"} className="text-decoration-none px-2 text1">
@@ -37,7 +37,7 @@ export default function Footer() {
               </NavLink>
             </li>
           </ul>
-          <p className="text-center text-muted">&copy; 2022 Company, Inc</p>
+          <p className="text-center text-muted">&copy; 2022 Jain Tools India</p>
         </footer>
       </div>
       <style>{`

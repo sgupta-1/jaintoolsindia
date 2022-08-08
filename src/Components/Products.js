@@ -25,501 +25,568 @@ export default function Products() {
   return (
     <div>
       <Navbar />
-      <h1 className="uppercase text-center text-6xl">Our Products</h1>
-      <div className="row row-cols-1 mx-3 row-cols-sm-2 row-cols-md-4">
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img17} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+      <div className="banners">
+        <h1 className="text-uppercase text-center py-5">Our Products</h1>
+        <form className="d-flex py-4 m-auto w-75" role="search">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search"
+          />
+          <button
+            className="btn btn-outline-success bg-primary text-white px-4 py-3"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+        <div className="row row-cols-1 mx-3 row-cols-sm-2 row-cols-md-4">
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img17} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Tools Sets</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Tools Sets</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img1} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img1} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Pliers</h4>
-              {/* <!--Text--> */}
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Pliers</h4>
+                {/* <!--Text--> */}
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img2} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img2} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Screw Drivers</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Screw Drivers</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img3} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img3} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Measuring Tapes</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Measuring Tapes</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img4} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img4} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Spanners</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Spanners</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img5} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img5} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Cutter Wheel</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Cutter Wheel</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img6} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img6} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Gotti handle</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Gotti handle</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img7} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img7} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Saw</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Saw</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img8} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img8} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Hammers</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Hammers</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img9} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img9} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Kitchen Knives</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Kitchen Knives</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img10} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img10} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Combination Spanners</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Combination Spanners</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img11} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img11} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">T Spanner</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">T Spanner</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img12} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img12} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Allen Key</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Allen Key</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button type="button" className="btn btn-light-blue btn-md">
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img13} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img13} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">File Handle</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">File Handle</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button type="button" className="btn btn-light-blue btn- btn0">
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img14} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img14} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Locks</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Locks</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img15} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img15} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">PVC Cross</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">PVC Cross</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img16} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img16} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Scissor</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Scissor</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img18} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img18} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Tin Cutter</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Tin Cutter</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
-        </div>
-        <div className="col mb-4">
-          {/* <!-- Card --> */}
-          <div className="card">
-            {/* <!--Card image--> */}
-            <div className="view overlay">
-              <img className="card-img-top" src={img19} alt="" />
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div className="col mb-4">
+            {/* <!-- Card --> */}
+            <div className="card">
+              {/* <!--Card image--> */}
+              <div className="view overlay">
+                <img className="card-img-top" src={img19} alt="" />
+                <a href="#!">
+                  <div className="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            {/* <!--Card content--> */}
-            <div className="card-body">
-              {/* <!--Title--> */}
-              <h6 className="text-uppercase text-secondary font-weight-bold">
-                Category
-              </h6>
-              <h4 className="card-title">Cutter</h4>
-              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
-                View More
-              </button>
+              {/* <!--Card content--> */}
+              <div className="card-body">
+                {/* <!--Title--> */}
+                <h6 className="text-uppercase text-secondary font-weight-bold">
+                  Category
+                </h6>
+                <h4 className="card-title">Cutter</h4>
+                {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md btn0"
+                >
+                  View More
+                </button>
+              </div>
             </div>
+            {/* <!-- Card --> */}
           </div>
-          {/* <!-- Card --> */}
         </div>
       </div>
       <Footer />

@@ -1,13 +1,12 @@
-
 /* --- Navbar Section --- */
 
-.nav-link{
+.nav-link {
   font-weight: 500;
 }
-.navbar-brand{
+.navbar-brand {
   font-weight: 500;
 }
-.btn0{
+.btn0 {
   color: #149279;
   font-weight: 500;
   border-color: #149279;
@@ -18,7 +17,6 @@
   color: white;
 }
 
-
 /* --- Preloader Section --- */
 .loader-container {
   width: 100%;
@@ -27,16 +25,15 @@
   background-color: #1abc9c;
   -ms-overflow-style: none;
 }
-.loader-container .loader h1{
+.loader-container .loader h1 {
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   color: white;
   left: 50%;
   font-size: 100px;
   font-weight: 900;
 }
-
 
 /* --- Global Placeholder Section --- */
 
@@ -48,27 +45,24 @@
   color: white;
 }
 
-
 /* --- Scrollbar Section --- */
 
-::-webkit-scrollbar
-{
-  width: 10px;  /* for vertical scrollbars */
+::-webkit-scrollbar {
+  width: 10px; /* for vertical scrollbars */
   height: 10px; /* for horizontal scrollbars */
 }
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169); 
+  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgba(18, 160, 132, 0.5); 
+  background-color: rgba(18, 160, 132, 0.5);
 }
-
 
 /* --- About Us Section --- */
 
-.aboutus{
+.aboutus {
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
   color: #616161;
@@ -119,7 +113,9 @@
 .aboutus .item span {
   font-style: normal;
 }
-.aboutus .slideanim {visibility:hidden;}
+.aboutus .slideanim {
+  visibility: hidden;
+}
 .aboutus .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -131,7 +127,7 @@
   0% {
     opacity: 0;
     transform: translateY(70%);
-  } 
+  }
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -141,7 +137,7 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(70%);
-  } 
+  }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -168,7 +164,7 @@
   }
 }
 
- /* Home Section */
+/* Home Section */
 
 @media screen and (min-width: 768px) {
   /* For Laptops */
@@ -189,4 +185,14 @@
     height: 650px;
     object-fit: fill;
   }
+}
+
+/* product page */
+.banners {
+  background: linear-gradient(rgba(248, 248, 238, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/banner.jpg") center/cover no-repeat;
+}
+
+.card-title {
+  text-transform: uppercase;
 }
