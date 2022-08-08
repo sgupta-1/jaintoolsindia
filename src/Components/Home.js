@@ -55,7 +55,7 @@ export default function Home() {
         <div className="carousel-inner">
           <div
             className="carousel-item active"
-            data-bs-interval="2000"
+            data-bs-interval="1000"
             data-touch="true"
           >
             <img src={img1} className="d-block w-100 " alt="..." />

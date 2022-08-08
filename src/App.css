@@ -185,7 +185,56 @@
   margin-left: 50px;
   color: #149279;
 }
-@media screen and (max-width: 768px) {
+
+
+
+/* --- Home Section --- */
+
+.wrench{
+  position: absolute;
+  right: 0%;
+  bottom: -30%;
+  font-size: 500px;
+  color: #333;
+}
+.screwdriver{
+  position: absolute;
+  top: -25%;
+  right: auto;
+  left: 2%;
+  transform: rotate(180deg);
+  font-size: 500px;
+  color: #e5e5e5;
+}
+
+
+/* --- Products Section --- */
+
+.card-title {
+  text-transform: uppercase;
+}
+
+
+/* --- Responsive Section --- */
+
+@media screen and (max-width: 480px) {
+  .aboutus .logo {
+    margin: -5px 0px;
+    height: 120px;
+  }
+  .fa-globe1{
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 650px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
   .aboutus .col-sm-4 {
     text-align: center;
     margin: 25px 0;
@@ -204,32 +253,31 @@
     height: 200px;
   }
 }
-@media screen and (max-width: 480px) {
-  .aboutus .logo {
-    margin: -5px 0px;
-    height: 120px;
+@media screen and (max-width: 768px) {
+  .wrench{
+    right: 0%;
+    bottom: -15%;
+    font-size: 300px;
   }
-  .fa-globe1{
-    margin-top: -40px;
-    margin-bottom: 20px;
+  .screwdriver{
+    top: -25%;
+    right: auto;
+    left: 2%;
+    font-size: 350px;
   }
 }
-
-
-/* --- Home Section --- */
-
-@media screen and (min-width: 768px) {
-  /* For Laptops */
-  .carousel {
-    height: 650px;
+@media screen and (max-width: 425px) {
+  .wrench{
+    right: 5%;
+    bottom: -20%;
+    font-size: 150px;
   }
-  .carousel-inner > .carousel-item > img {
-    height: 650px;
-    object-fit: fill;
+  .screwdriver{
+    top: -30%;
+    font-size: 200px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* For Large Laptops */
   .carousel {
     height: 650px;
   }
@@ -237,15 +285,4 @@
     height: 650px;
     object-fit: fill;
   }
-}
-
-
-/* --- Products Section --- */
-.banners {
-  background: linear-gradient(rgba(248, 248, 238, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./img/banner.jpg") center/cover no-repeat;
-}
-
-.card-title {
-  text-transform: uppercase;
 }
