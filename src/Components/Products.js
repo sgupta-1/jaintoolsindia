@@ -25,7 +25,7 @@ export default function Products() {
   return (
     <div>
       <Navbar />
-      <div className="banners">
+      <div className="banners slideanim1">
         <h1 className="text-uppercase text-center py-5">Our Products</h1>
         <form className="d-flex py-4 m-auto w-75" role="search">
           <input

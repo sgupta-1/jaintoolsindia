@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="container1">
+      <div className="container1 slideanim1">
         <div className="form">
           <div className="contact-info">
             <h3 className="title">Let's get in touch</h3>

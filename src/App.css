@@ -1,3 +1,28 @@
+/* --- Global Section --- */
+.slideanim1 {
+  animation: 4s ease-out 0s 1 slidet;
+  -webkit-animation: 4s ease-out 0s 1 slidet;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+@keyframes slidet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* --- Navbar Section --- */
 
 .nav-link {
@@ -84,11 +109,22 @@
 .aboutus .container-fluid {
   padding: 60px 50px;
 }
+.aboutus .btn-info{
+  color: white;
+  font-weight: 500;
+  background-color: #149279;
+}
+.aboutus .btn-info:hover{
+  color: white;
+  background-color: #17a78a;
+}
 .aboutus .bg-grey {
-  background-color: #f6f6f6;
+  background-color: rgb(250, 250, 250);
 }
 .aboutus .logo-small {
   font-size: 50px;
+  margin: 20px 0px;
+  color: #149279;
 }
 .aboutus .logo {
   height: 400px;
@@ -143,10 +179,21 @@
     -webkit-transform: translateY(0%);
   }
 }
+.fa-globe1{
+  margin-top: 50px;
+  font-size: 250px;
+  margin-left: 50px;
+  color: #149279;
+}
 @media screen and (max-width: 768px) {
   .aboutus .col-sm-4 {
     text-align: center;
     margin: 25px 0;
+  }
+  .fa-globe1{
+    margin-top: 150px;
+    font-size: 10em;
+    margin-left: -25px;
   }
   .aboutus .btn-lg {
     width: 100%;
@@ -162,9 +209,14 @@
     margin: -5px 0px;
     height: 120px;
   }
+  .fa-globe1{
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
 }
 
-/* Home Section */
+
+/* --- Home Section --- */
 
 @media screen and (min-width: 768px) {
   /* For Laptops */
@@ -187,7 +239,8 @@
   }
 }
 
-/* product page */
+
+/* --- Products Section --- */
 .banners {
   background: linear-gradient(rgba(248, 248, 238, 0.7), rgba(0, 0, 0, 0.7)),
     url("./img/banner.jpg") center/cover no-repeat;

@@ -27,7 +27,7 @@ export default function Navbar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
-                className="nav-link text-uppercase"
+                className="nav-link "
                 aria-current="page"
                 to={"/"}
                 style={({ isActive }) => ({
@@ -39,7 +39,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link text-uppercase"
+                className="nav-link "
                 to={"/about-us"}
                 style={({ isActive }) => ({
                   color: isActive ? "#14927b" : "#000",
@@ -50,7 +50,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link text-uppercase"
+                className="nav-link "
                 to={"/products"}
                 style={({ isActive }) => ({
                   color: isActive ? "#14927b" : "#000",
@@ -61,7 +61,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                className="nav-link text-uppercase"
+                className="nav-link "
                 to={"/contact-us"}
                 style={({ isActive }) => ({
                   color: isActive ? "#14927b" : "#000",

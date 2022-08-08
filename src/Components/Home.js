@@ -9,8 +9,9 @@ import img5 from "../img/carousel/9.jpg";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
+    <div className="slideanim1">
       <div
         id="carouselDark"
         className="carousel carousel-light carousel-fade slide"
@@ -89,7 +90,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
+      <Footer />
+      </>
   );
 }
