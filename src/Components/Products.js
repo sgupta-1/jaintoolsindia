@@ -281,7 +281,7 @@ export default function Products() {
               </h6>
               <h4 className="card-title">Kitchen Knives</h4>
               {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-              <button type="button" className="btn btn-light-blue btn-md">
+              <button type="button" className="btn btn-light-blue btn-md btn0">
                 View More
               </button>
             </div>
