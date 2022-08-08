@@ -127,7 +127,9 @@
   color: #149279;
 }
 .aboutus .logo {
-  height: 400px;
+  margin-top: 60px;
+  margin-left: 50px;
+  height: 300px;
 }
 .aboutus .thumbnail {
   padding: 0 0 15px 0;
@@ -185,56 +187,7 @@
   margin-left: 50px;
   color: #149279;
 }
-
-
-
-/* --- Home Section --- */
-
-.wrench{
-  position: absolute;
-  right: 0%;
-  bottom: -30%;
-  font-size: 500px;
-  color: #333;
-}
-.screwdriver{
-  position: absolute;
-  top: -25%;
-  right: auto;
-  left: 2%;
-  transform: rotate(180deg);
-  font-size: 500px;
-  color: #e5e5e5;
-}
-
-
-/* --- Products Section --- */
-
-.card-title {
-  text-transform: uppercase;
-}
-
-
-/* --- Responsive Section --- */
-
-@media screen and (max-width: 480px) {
-  .aboutus .logo {
-    margin: -5px 0px;
-    height: 120px;
-  }
-  .fa-globe1{
-    margin-top: -40px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .carousel {
-    height: 650px;
-  }
-  .carousel-inner > .carousel-item > img {
-    height: 650px;
-    object-fit: fill;
-  }
+@media screen and (max-width: 768px) {
   .aboutus .col-sm-4 {
     text-align: center;
     margin: 25px 0;
@@ -253,6 +206,63 @@
     height: 200px;
   }
 }
+@media screen and (max-width: 480px) {
+  .aboutus .logo {
+    margin: -5px 0px;
+    height: 120px;
+  }
+  .fa-globe1{
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* --- Home Section --- */
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    height: 650px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel {
+    height: 650px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
+}
+
+.wrench{
+  position: absolute;
+  right: 0%;
+  bottom: -30%;
+  font-size: 500px;
+  color: #333;
+}
+.screwdriver{
+  position: absolute;
+  top: -25%;
+  right: auto;
+  left: 0%;
+  transform: rotate(180deg);
+  font-size: 500px;
+  color: #e5e5e5;
+}
+
+
+/* --- Products Section --- */
+
+.card-title {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 768px) {
   .wrench{
     right: 0%;
@@ -273,16 +283,7 @@
     font-size: 150px;
   }
   .screwdriver{
-    top: -30%;
+    top: -37%;
     font-size: 200px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .carousel {
-    height: 650px;
-  }
-  .carousel-inner > .carousel-item > img {
-    height: 650px;
-    object-fit: fill;
   }
 }
