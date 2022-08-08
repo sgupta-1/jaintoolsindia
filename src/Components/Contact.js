@@ -90,12 +90,8 @@ export default function Contact() {
             <span className="circle one"></span>
             <span className="circle two"></span>
 
-            <form
-              onSubmit={handleSubmit}
-              autocomplete="off"
-              className="form1"
-            >
-              <h3 className="title">Contact us</h3>
+            <form onSubmit={handleSubmit} autoComplete="off" className="form1">
+              <h3 className="title text-uppercase">Contact us</h3>
               <div className="input-container">
                 <input
                   type="text"
@@ -113,9 +109,9 @@ export default function Contact() {
               <div className="input-container">
                 <input
                   type="email"
-                  autocapitalize="off"
-                  spellcheck="false"
-                  autocorrect="off"
+                  autoCapitalize="off"
+                  spellCheck="false"
+                  autoCorrect="off"
                   lang="en"
                   name="email"
                   placeholder="Email: example@domain.com"
@@ -136,7 +132,7 @@ export default function Contact() {
                   value={number}
                   onChange={handleInputChange}
                   title="Must contain a 10 Digit Number"
-                  maxlength="10"
+                  maxLength="10"
                   className="input"
                   required
                 />
