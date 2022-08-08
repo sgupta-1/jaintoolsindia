@@ -12,7 +12,8 @@
   font-weight: 500;
   border-color: #149279;
 }
-.btn0:hover,.btn0:focus{
+.btn0:hover,
+.btn0:focus {
   background-color: #1abc9c;
   color: white;
 }
@@ -39,11 +40,11 @@
 
 /* --- Global Placeholder Section --- */
 
-::placeholder{
+::placeholder {
   color: white;
   opacity: 1;
 }
-::-ms-input-placeholder{
+::-ms-input-placeholder {
   color: white;
 }
 
@@ -171,5 +172,28 @@
 @media screen and (max-width: 480px) {
   .aboutus .logo {
     font-size: 150px;
+  }
+}
+
+ /* Home Section */
+
+@media screen and (min-width: 768px) {
+  /* For Laptops */
+  .carousel {
+    height: 650px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* For Large Laptops */
+  .carousel {
+    height: 650px;
+  }
+  .carousel-inner > .carousel-item > img {
+    height: 650px;
+    object-fit: fill;
   }
 }

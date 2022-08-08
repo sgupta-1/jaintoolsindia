@@ -1,123 +1,167 @@
-import React,{useState} from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import {database} from '../firebase'
-import {ref,push,child,update} from "firebase/database";
-import img1 from "../img/contact/email.png"
-import img2 from "../img/contact/location.png"
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { database } from "../firebase";
+import { ref, push, child, update } from "firebase/database";
+import img1 from "../img/contact/email.png";
+import img2 from "../img/contact/location.png";
 
 export default function Contact() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
-  const [number,setNumber] = useState(null);
-  const [message,setMessage] = useState(null);
-
+  const [number, setNumber] = useState(null);
+  const [message, setMessage] = useState(null);
 
   const handleInputChange = (e) => {
-    const {id , value} = e.target;
-    if(id === "name"){
-        setName(value);
+    const { id, value } = e.target;
+    if (id === "name") {
+      setName(value);
     }
-    if(id === "email"){
-        setEmail(value);
+    if (id === "email") {
+      setEmail(value);
     }
-    if(id === "number"){
-        setNumber(value);
+    if (id === "number") {
+      setNumber(value);
     }
-    if(id === "message"){
-        setMessage(value);
+    if (id === "message") {
+      setMessage(value);
     }
+  };
 
-}
-
-const handleSubmit = (e) =>{
-  e.preventDefault()
-  let obj = {
-          name:name,
-          email:email,
-          number:number,
-          message:message,
-      }       
-  const newPostKey = push(child(ref(database), 'posts')).key;
-  const updates = {};
-  updates['/' + newPostKey] = obj
-  setName('')
-  setEmail('')
-  setNumber('')
-  setMessage('')
-  alert('Form Submitted...')
-  return update(ref(database), updates);
-}
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let obj = {
+      name: name,
+      email: email,
+      number: number,
+      message: message,
+    };
+    const newPostKey = push(child(ref(database), "posts")).key;
+    const updates = {};
+    updates["/" + newPostKey] = obj;
+    setName("");
+    setEmail("");
+    setNumber("");
+    setMessage("");
+    alert("Form Submitted...");
+    return update(ref(database), updates);
+  };
 
   return (
-    
     <>
-      
-      <Navbar/>
-      <div class="container1">
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            Do you have any questions or you have to inquire ? Don't feel shy we are here only for you...why not get in touch?
-          </p>
+      <Navbar />
+      <div className="container1">
+        <div className="form">
+          <div className="contact-info">
+            <h3 className="title">Let's get in touch</h3>
+            <p className="text">
+              Do you have any questions or you have to inquire ? Don't feel shy
+              we are here only for you...why not get in touch?
+            </p>
 
-          <div class="info">
-            <div class="information">
-              <img src={img1} class="icon" alt="" />
-              <p>Rithala, New Delhi, IN 110092</p>
+            <div className="info">
+              <div className="information">
+                <img src={img1} className="icon" alt="" />
+                <p>Rithala, New Delhi, IN 110092</p>
+              </div>
+              <div className="information">
+                <img src={img2} className="icon" alt="" />
+                <p>jaintoolsindia@gmail.com</p>
+              </div>
             </div>
-            <div class="information">
-              <img src={img2} class="icon" alt="" />
-              <p>jaintoolsindia@gmail.com</p>
+
+            <div className="social-media">
+              <p>Connect with us :</p>
+              <div className="social-icons">
+                <a href="https://www.facebook.com">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.twitter.com">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.instagram.com">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
+          <div className="contact-form">
+            <span className="circle one"></span>
+            <span className="circle two"></span>
+
+            <form
+              onSubmit={handleSubmit}
+              autocomplete="off"
+              classNameName="form1"
+            >
+              <h3 className="title">Contact us</h3>
+              <div className="input-container">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name: John Doe"
+                  pattern="[a-zA-Z][a-zA-Z ]{3,}"
+                  lang="en"
+                  id="name"
+                  className="input"
+                  value={name}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="input-container">
+                <input
+                  type="email"
+                  autocapitalize="off"
+                  spellcheck="false"
+                  autocorrect="off"
+                  lang="en"
+                  name="email"
+                  placeholder="Email: example@domain.com"
+                  id="email"
+                  className="input"
+                  value={email}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="input-container">
+                <input
+                  type="tel"
+                  name="number"
+                  id="number"
+                  placeholder="Phone Number: 9876XXXXXX"
+                  pattern="[0-9]{10}"
+                  value={number}
+                  onChange={handleInputChange}
+                  title="Must contain a 10 Digit Number"
+                  maxlength="10"
+                  className="input"
+                  required
+                />
+              </div>
+              <div className="input-container textarea">
+                <textarea
+                  name="message"
+                  lang="en"
+                  className="input"
+                  placeholder="Message"
+                  id="message"
+                  value={message}
+                  onChange={handleInputChange}
+                  required
+                ></textarea>
+              </div>
+              <input type="submit" value="Send" className="btn1" />
+            </form>
           </div>
-        </div>
-
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form onSubmit={handleSubmit} autocomplete="off" className='form1'>
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" placeholder="Name: John Doe" pattern="[a-zA-Z][a-zA-Z ]{3,}" lang='en' id="name" class="input" value={name}  onChange={handleInputChange} required/>
-            </div>
-            <div class="input-container">
-              <input type="email" autocapitalize="off" spellcheck="false" autocorrect="off" lang='en' name="email" placeholder="Email: example@domain.com"  id="email" class="input" value={email}  onChange={handleInputChange} required/>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="number" id="number" placeholder="Phone Number: 9876XXXXXX" pattern="[0-9]{10}" value={number} onChange={handleInputChange} title="Must contain a 10 Digit Number" maxlength='10' class="input"  required/>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" lang='en' class="input" placeholder="Message" id="message" value={message} onChange={handleInputChange} required></textarea>
-            </div>
-            <input type="submit" value="Send" class="btn1" />
-          </form>
         </div>
       </div>
-    </div>
-      <Footer/>
+      <Footer />
 
-
-      <style>{
-        `.container1 {
+      <style>
+        {`.container1 {
   position: relative;
   width: 100%;
   min-height: 80vh;
@@ -444,10 +488,8 @@ textarea.input {
 
   .btn1 {
     padding: 0.45rem 1.2rem;
-  }`
-  }
+  }`}
       </style>
     </>
-      
-  )
+  );
 }
