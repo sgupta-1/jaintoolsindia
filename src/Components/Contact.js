@@ -93,7 +93,7 @@ export default function Contact() {
             <form
               onSubmit={handleSubmit}
               autocomplete="off"
-              classNameName="form1"
+              className="form1"
             >
               <h3 className="title">Contact us</h3>
               <div className="input-container">
