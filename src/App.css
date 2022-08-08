@@ -1,46 +1,12 @@
 
+/* --- Navbar Section --- */
+
 .nav-link{
   font-weight: 500;
 }
-
 .navbar-brand{
   font-weight: 500;
 }
-
-.loader-container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: #1abc9c;
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar
-{
-  width: 10px;  /* for vertical scrollbars */
-  height: 10px; /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169); 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: rgba(18, 160, 132, 0.5); 
-}
-
-.loader-container .loader h1{
-  top: 50%;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  color: white;
-  left: 50%;
-  font-size: 100px;
-  font-weight: 900;
-}
-
 .btn0{
   color: #149279;
   font-weight: 500;
@@ -51,10 +17,159 @@
   color: white;
 }
 
+
+/* --- Preloader Section --- */
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #1abc9c;
+  -ms-overflow-style: none;
+}
+.loader-container .loader h1{
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  color: white;
+  left: 50%;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+
+/* --- Global Placeholder Section --- */
+
 ::placeholder{
   color: white;
   opacity: 1;
 }
 ::-ms-input-placeholder{
   color: white;
+}
+
+
+/* --- Scrollbar Section --- */
+
+::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+  height: 10px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px rgb(90, 189, 169); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(18, 160, 132, 0.5); 
+}
+
+
+/* --- About Us Section --- */
+
+.aboutus{
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #616161;
+}
+.aboutus h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.aboutus h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.aboutus .container-fluid {
+  padding: 60px 50px;
+}
+.aboutus .bg-grey {
+  background-color: #f6f6f6;
+}
+.aboutus .logo-small {
+  color: #f4511e;
+  font-size: 50px;
+}
+.aboutus .logo {
+  color: #f4511e;
+  font-size: 200px;
+}
+.aboutus .thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+.aboutus .thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.aboutus .carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+.aboutus .carousel-indicators li {
+  border-color: #f4511e;
+}
+.aboutus .carousel-indicators li.active {
+  background-color: #f4511e;
+}
+.aboutus .item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.aboutus .item span {
+  font-style: normal;
+}
+.aboutus .slideanim {visibility:hidden;}
+.aboutus .slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutus .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .aboutus .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aboutus .logo {
+    font-size: 150px;
+  }
 }

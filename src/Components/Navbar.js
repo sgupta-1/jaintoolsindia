@@ -4,7 +4,7 @@ import logo from '../img/logo.png';
 
 export default function Navbar() {
         return (
-          <nav className="navbar sticky-top navbar-expand-lg bg-white shadow-sm">
+          <nav className="navbar sticky-top navbar-expand-lg bg-white shadow-sm ">
             <div className="container-fluid">
                <a class="navbar-brand" href="/">
                  <img src={logo} alt="JTI Logo" height="40" />

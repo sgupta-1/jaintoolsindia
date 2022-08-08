@@ -1,12 +1,26 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import $ from 'jquery'
+
+
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+  });
+});
+
 
 export default function About() {
   return (
     <div>
       <Navbar/>
-        
+<div className='aboutus'>      
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -132,6 +146,7 @@ export default function About() {
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
 </div>
 
       <Footer/>
