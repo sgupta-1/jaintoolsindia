@@ -16,388 +16,120 @@ export default function Products() {
     <div>
       <Navbar />
       <h1 className="uppercase text-center text-6xl">Our Products</h1>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img2}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
-                  </h1>
-                  <div className="flex items-center flex-wrap">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img3}
-                  alt="blog"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img4}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img5}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img6}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <div className="row row-cols-1 mx-3 row-cols-sm-2 row-cols-md-4">
+        <div className="col mb-4">
+          {/* <!-- Card --> */}
+          <div className="card">
+            {/* <!--Card image--> */}
+            <div className="view overlay">
+              <img className="card-img-top" src={img1} alt="" />
+              <a href="#!">
+                <div className="mask rgba-white-slight"></div>
+              </a>
             </div>
 
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
-                  className="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src={img1}
-                  alt="product"
-                />
-                <div className="p-6">
-                  <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    CATEGORY
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Cutter
-                  </h1>
-                  <div className="flex items-center flex-wrap ">
-                    <a
-                      href="/"
-                      className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
+            {/* <!--Card content--> */}
+            <div className="card-body">
+              {/* <!--Title--> */}
+              <h4 className="card-title">Card title</h4>
+              {/* <!--Text--> */}
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+              <button type="button" className="btn btn-light-blue btn-md">
+                Read more
+              </button>
             </div>
           </div>
+          {/* <!-- Card --> */}
         </div>
-      </section>
+        <div className="col mb-4">
+          {/* <!-- Card --> */}
+          <div className="card">
+            {/* <!--Card image--> */}
+            <div className="view overlay">
+              <img className="card-img-top" src={img2} alt="" />
+              <a href="#!">
+                <div className="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            {/* <!--Card content--> */}
+            <div className="card-body">
+              {/* <!--Title--> */}
+              <h4 className="card-title">Card title</h4>
+              {/* <!--Text--> */}
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+              <button type="button" className="btn btn-light-blue btn-md">
+                Read more
+              </button>
+            </div>
+          </div>
+          {/* <!-- Card --> */}
+        </div>
+        <div className="col mb-4">
+          {/* <!-- Card --> */}
+          <div className="card">
+            {/* <!--Card image--> */}
+            <div className="view overlay">
+              <img className="card-img-top" src={img3} alt="" />
+              <a href="#!">
+                <div className="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            {/* <!--Card content--> */}
+            <div className="card-body">
+              {/* <!--Title--> */}
+              <h4 className="card-title">Card title</h4>
+              {/* <!--Text--> */}
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+              <button type="button" className="btn btn-light-blue btn-md">
+                Read more
+              </button>
+            </div>
+          </div>
+          {/* <!-- Card --> */}
+        </div>
+        <div className="col mb-4">
+          {/* <!-- Card --> */}
+          <div className="card">
+            {/* <!--Card image--> */}
+            <div className="view overlay">
+              <img className="card-img-top" src={img4} alt="" />
+              <a href="#!">
+                <div className="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            {/* <!--Card content--> */}
+            <div className="card-body">
+              {/* <!--Title--> */}
+              <h4 className="card-title">Card title</h4>
+              {/* <!--Text--> */}
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
+              <button type="button" className="btn btn-light-blue btn-md">
+                Read more
+              </button>
+            </div>
+          </div>
+          {/* <!-- Card --> */}
+        </div>
+      </div>
       <Footer />
     </div>
   );
