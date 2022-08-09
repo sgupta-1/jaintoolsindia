@@ -1,0 +1,13 @@
+[{
+  "_id": 1,
+  "name": "8inch MAC HEAVY PLIER",
+  "category": "Pliers",
+  "price": 150,
+  "pic": "https://i.postimg.cc/fT64trV3/img1.png"
+},{
+  "_id": 2,
+  "name": "Denim Plier",
+  "category": "Pliers",
+  "price": 250,
+  "pic": "https://i.postimg.cc/htBBZYck/denim-plier-2.png"
+}]

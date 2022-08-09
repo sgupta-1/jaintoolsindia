@@ -20,23 +20,32 @@ import img16 from "../img/products/scissors(NoBG).png";
 import img17 from "../img/products/Sets(NoBG).png";
 import img18 from "../img/products/TinCutter(NoBG).png";
 import img19 from "../img/products/My project.png";
-
+import { useNavigate } from "react-router-dom";
+export let cat;
 export default function Products() {
+  const navigate = useNavigate();
+  const navigateScreen = (screen, e) => {
+    navigate(screen);
+    cat = e;
+  };
   return (
     <div>
       <Navbar />
       <div className="slideanim1">
-
-
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Our Products</h1>
-      <p class="lead fw-normal">We offer you best quality items with competitve prices because we value in building trust and satisfaction.</p>
-      <a class="btn btn-outline-secondary" href="#products">Know More</a>
-    </div>
-    <span class='fas fa-screwdriver screwdriver '></span>
-    <span class='fas fa-wrench wrench'></span>
-  </div>
+        <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <div className="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 className="display-4 fw-normal">Our Products</h1>
+            <p className="lead fw-normal">
+              We offer you best quality items with competitve prices because we
+              value in building trust and satisfaction.
+            </p>
+            <a className="btn btn-outline-secondary" href="#products">
+              Know More
+            </a>
+          </div>
+          <span className="fas fa-screwdriver screwdriver "></span>
+          <span className="fas fa-wrench wrench"></span>
+        </div>
         <form className="d-flex py-4 m-auto w-75" role="search">
           <section id="products"></section>
           <input
@@ -74,7 +83,10 @@ export default function Products() {
                 {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
                 <button
                   type="button"
-                  className="btn btn-light-blue btn-md btn0"
+                  className="btn btn-light-blue btn-md btn0 btnnn"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Tools Sets")
+                  }
                 >
                   View More
                 </button>
@@ -104,7 +116,8 @@ export default function Products() {
                 {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
                 <button
                   type="button"
-                  className="btn btn-light-blue btn-md btn0"
+                  className="btnnn btn btn-light-blue btn-md btn0 "
+                  onClick={() => navigateScreen("/showallproducts", "Pliers")}
                 >
                   View More
                 </button>
@@ -134,6 +147,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Screw Drivers")
+                  }
                 >
                   View More
                 </button>
@@ -163,6 +179,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Measuring Tapes")
+                  }
                 >
                   View More
                 </button>
@@ -192,6 +211,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Spanners")}
                 >
                   View More
                 </button>
@@ -221,6 +241,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Cutter Wheel")
+                  }
                 >
                   View More
                 </button>
@@ -250,6 +273,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Gotti handle")
+                  }
                 >
                   View More
                 </button>
@@ -279,6 +305,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Saw")}
                 >
                   View More
                 </button>
@@ -308,6 +335,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Hammers")}
                 >
                   View More
                 </button>
@@ -337,6 +365,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Kitchen Knives")
+                  }
                 >
                   View More
                 </button>
@@ -365,6 +396,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Combo Spanners")
+                  }
                 >
                   View More
                 </button>
@@ -394,6 +428,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "T Spanner")
+                  }
                 >
                   View More
                 </button>
@@ -420,7 +457,13 @@ export default function Products() {
                 </h6>
                 <h4 className="card-title">Allen Key</h4>
                 {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-                <button type="button" className="btn btn-light-blue btn-md">
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn-md"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Allen Key")
+                  }
+                >
                   View More
                 </button>
               </div>
@@ -446,7 +489,13 @@ export default function Products() {
                 </h6>
                 <h4 className="card-title">File Handle</h4>
                 {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
-                <button type="button" className="btn btn-light-blue btn- btn0">
+                <button
+                  type="button"
+                  className="btn btn-light-blue btn- btn0 "
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "File Handle")
+                  }
+                >
                   View More
                 </button>
               </div>
@@ -475,6 +524,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Locks")}
                 >
                   View More
                 </button>
@@ -504,6 +554,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "PVC Cross")
+                  }
                 >
                   View More
                 </button>
@@ -533,6 +586,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Scissor")}
                 >
                   View More
                 </button>
@@ -562,6 +616,9 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() =>
+                    navigateScreen("/showallproducts", "Tin Cutter")
+                  }
                 >
                   View More
                 </button>
@@ -591,6 +648,7 @@ export default function Products() {
                 <button
                   type="button"
                   className="btn btn-light-blue btn-md btn0"
+                  onClick={() => navigateScreen("/showallproducts", "Cutter")}
                 >
                   View More
                 </button>
