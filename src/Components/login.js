@@ -26,7 +26,7 @@ export default function login() {
                   type="tel"
                   name="number"
                   id="number"
-                  placeholder="Phone Number: 9876XXXXXX"
+                  placeholder="919876XXXXXX"
                   pattern="[0-9]{10}"
                   title="Must contain a 10 Digit Number"
                   maxLength="10"
