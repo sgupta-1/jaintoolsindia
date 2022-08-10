@@ -4,9 +4,10 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import Products from "./Components/Products";
-import Login from "./Components/login";
-import Signup from "./Components/signup";
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
 import ShowAllProducts from "./Components/ShowAllProducts";
+import OTP from "./Components/otp";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/login" element={<Login  />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/showallproducts" element={<ShowAllProducts />} />
+        <Route exact path="/otp-verification" element={<OTP />} />
       </Routes>
     </Router>
   );

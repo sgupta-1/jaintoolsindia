@@ -6,7 +6,7 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber  } from "firebase/aut
 
 const auth = getAuth();
 
-export default function login() {
+export default function Signup() {
 
 
     function myFunction() {
