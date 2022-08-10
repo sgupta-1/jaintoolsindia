@@ -22,7 +22,6 @@
   }
 }
 
-
 /* --- Navbar Section --- */
 
 .nav-link {
@@ -109,12 +108,12 @@
 .aboutus .container-fluid {
   padding: 60px 50px;
 }
-.aboutus .btn-info{
+.aboutus .btn-info {
   color: white;
   font-weight: 500;
   background-color: #149279;
 }
-.aboutus .btn-info:hover{
+.aboutus .btn-info:hover {
   color: white;
   background-color: #17a78a;
 }
@@ -181,7 +180,7 @@
     -webkit-transform: translateY(0%);
   }
 }
-.fa-globe1{
+.fa-globe1 {
   margin-top: 50px;
   font-size: 250px;
   margin-left: 50px;
@@ -192,7 +191,7 @@
     text-align: center;
     margin: 25px 0;
   }
-  .fa-globe1{
+  .fa-globe1 {
     margin-top: 150px;
     font-size: 10em;
     margin-left: -25px;
@@ -211,42 +210,59 @@
     margin: -5px 0px;
     height: 120px;
   }
-  .fa-globe1{
+  .fa-globe1 {
     margin-top: -40px;
     margin-bottom: 20px;
   }
 }
 
-
 /* --- Home Section --- */
 
 @media screen and (min-width: 768px) {
-  .carousel {
+  .carousel-main {
     height: 650px;
   }
-  .carousel-inner > .carousel-item > img {
+  .carousel-image {
     height: 650px;
     object-fit: fill;
   }
 }
 @media screen and (min-width: 992px) {
-  .carousel {
+  .carousel-main {
     height: 650px;
   }
-  .carousel-inner > .carousel-item > img {
+  .carousel-image {
     height: 650px;
     object-fit: fill;
   }
 }
+@media screen and (min-width: 768px) {
+  .carousel-main {
+    height: 650px;
+  }
+  .carousel-image {
+    height: 650px;
+    object-fit: fill;
+  }
+}
+/* @media screen and (min-width: 992px) {
+  .carousel-main2 {
+    height: 250px;
+  }
+  .carousel-image2 {
+    height: 250px;
+    object-fit: fill;
+  }
+} */
 
-.wrench{
+.wrench {
   position: absolute;
   right: 0%;
   bottom: -30%;
   font-size: 500px;
   color: #333;
 }
-.screwdriver{
+.screwdriver {
   position: absolute;
   top: -25%;
   right: auto;
@@ -256,7 +272,6 @@
   color: #e5e5e5;
 }
 
-
 /* --- Products Section --- */
 
 .card-title {
@@ -264,12 +279,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wrench{
+  .wrench {
     right: 0%;
     bottom: -15%;
     font-size: 300px;
   }
-  .screwdriver{
+  .screwdriver {
     top: -25%;
     right: auto;
     left: 2%;
@@ -277,13 +292,14 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .wrench{
+  .wrench {
     right: 5%;
     bottom: -20%;
     font-size: 150px;
   }
-  .screwdriver{
+  .screwdriver {
     top: -37%;
     font-size: 200px;
   }
 }
+
