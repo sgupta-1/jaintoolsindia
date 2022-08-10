@@ -40,6 +40,21 @@
   background-color: #1abc9c;
   color: white;
 }
+.navlogsign .signup{
+  background-color: #149279;
+  border-color: #149279;
+}
+.navlogsign .signup:hover{
+  background-color: #12806a;
+}
+.navlogsign .login{
+  color: #149279;
+  border-color: #149279;
+}
+.navlogsign .login:hover{
+  background-color: #149279;
+  color: white;
+}
 
 /* --- Preloader Section --- */
 .loader-container {

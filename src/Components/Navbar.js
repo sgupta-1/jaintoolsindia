@@ -71,17 +71,17 @@ export default function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <form className="d-flex" role="search">
+          <form className="d-flex navlogsign" role="search">
             <input
               className="form-control me-2"
               type="search"
               placeholder="Search..."
               aria-label="Search"
             />
-            <button className="btn btn-outline-success btn0" type="submit">
-              Search
-            </button>
+        <input type="button" class="login btn btn-outline-primary me-2" value="Login" />
+        <input type="button" class="btn signup btn-primary" value="Sign-up" />
           </form>
+          
         </div>
       </div>
     </nav>
