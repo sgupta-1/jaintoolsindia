@@ -30,16 +30,6 @@
 .navbar-brand {
   font-weight: 500;
 }
-.btn0 {
-  color: #149279;
-  font-weight: 500;
-  border-color: #149279;
-}
-.btn0:hover,
-.btn0:focus {
-  background-color: #1abc9c;
-  color: white;
-}
 .navlogsign .signup{
   background-color: #149279;
   border-color: #149279;
@@ -51,7 +41,7 @@
   color: #149279;
   border-color: #149279;
 }
-.navlogsign .login:hover{
+.navlogsign .login:hover,.navlogsign .login:focus{
   background-color: #149279;
   color: white;
 }
@@ -270,6 +260,59 @@
   }
 } */
 
+
+/* --- Login Section --- */
+
+.btnlog{
+  padding-left: 2.5rem; padding-right: 2.5rem;
+  background-color: #149279;
+}
+.iconic{
+  background-color: #149279;
+}
+.iconic:hover, .iconic:focus{
+  background-color: #12806a;
+}
+.btnlog:hover{
+  background-color: #12806a;
+}
+.btnlog:focus{
+  background-color: #12806a;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 2px;
+background: rgb(201, 201, 201);
+}
+.simpletext{
+  font-size: 30px;
+}
+.h-custom {
+height: calc(100% - 30px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+
+/* --- Sign-up Section --- */
+
+input[type="button"]:disabled {
+  background-color: #149279;
+  border-color: #149279;
+}
+
+
+
+/* --- Products Section --- */
+
+.card-title {
+  text-transform: uppercase;
+}
 .wrench {
   position: absolute;
   right: 0%;
@@ -286,13 +329,6 @@
   font-size: 500px;
   color: #e5e5e5;
 }
-
-/* --- Products Section --- */
-
-.card-title {
-  text-transform: uppercase;
-}
-
 @media screen and (max-width: 768px) {
   .wrench {
     right: 0%;
