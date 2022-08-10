@@ -2,7 +2,15 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { cat } from "./Products";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 export default function ShowHeros() {
+  const navigate = useNavigate();
+  const navigateScreen = () => {
+    navigate("/products");
+  };
+  if (cat === undefined) {
+    navigateScreen();
+  }
   const [prodData, setProdsData] = useState([]);
   const selectedId = [];
   useEffect(() => {
@@ -71,12 +79,11 @@ const HeroView = (props) => {
           {/* <!--Title--> */}
           <h5>{props.item.name}</h5>
           <div className="mb-2 text-muted small">
-            <p className=" mb-4 mb-md-0"></p>
+            <p className=" mb-4 mb-md-0">{props.item.desc}</p>
           </div>
           <div className="d-flex flex-row align-items-center mb-1">
             <h4 className="mb-1 me-1">&#x20b9; {props.item.price}</h4>
           </div>
-          {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
           <div className="d-flex flex-column mt-4">
             <button className="btn btn-primary btn-sm" type="button">
               Details
@@ -93,4 +100,3 @@ const HeroView = (props) => {
     </div>
   );
 };
-//  style={`background-color: #eee;`}
