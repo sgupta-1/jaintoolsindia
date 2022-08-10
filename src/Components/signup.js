@@ -50,7 +50,7 @@ export default function login() {
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <input type="button" value="Sign-up" class="btn btnlog btn-primary btn-lg" id="signup" disabled/>
+            <input type="submit" value="Sign-up" class="btn btnlog btn-primary btn-lg" id="signup" disabled/>
             <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <NavLink className="link-danger" to={"/login"}>Login</NavLink></p>
           </div>
 

@@ -300,12 +300,12 @@ height: 100%;
 
 /* --- Sign-up Section --- */
 
-input[type="button"]:disabled {
+input[type="submit"]:disabled {
   background-color: #149279;
   border-color: #149279;
 }
 .mt{
-  margin-top: 5rem;
+  margin: 5rem 0px;
 }
 
 
