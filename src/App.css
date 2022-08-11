@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 /* --- Global Section --- */
 .slideanim1 {
   animation: 4s ease-out 0s 1 slidet;
@@ -66,11 +67,17 @@
 
 /* --- Global Placeholder Section --- */
 
-::placeholder {
+.form1 ::placeholder {
   color: white;
   opacity: 1;
 }
-::-ms-input-placeholder {
+.form1 ::-ms-placeholder {
+  color: white;
+}
+.form1 ::-webkit-input-placeholder {
+  color: white;
+}
+.form1 ::-moz-placeholder {
   color: white;
 }
 
@@ -307,6 +314,44 @@ input[type="submit"]:disabled {
 .mt{
   margin: 5rem 0px;
 }
+.digit-group input {
+  width: 60px;
+  height: 60px;
+  background-color: lighten(white, 5%);
+  border: none;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: black;
+  margin: 0 2px;
+  border-radius: 18px;
+  border: 3px solid #293886;
+}
+.prompt {
+margin-bottom: 20px;
+font-size: 20px;
+color: white;
+}
+.digit-group ::-webkit-input-placeholder {
+  /* Edge */
+  font-weight: 800;
+  color: #9c9a9a;
+}
+.digit-group ::-ms-input-placeholder {
+  /* Internet Explorer */
+  font-weight: 800;
+  color: #9c9a9a;
+}
+.digit-group ::placeholder {
+  font-weight: 900;
+  color: #9c9a9a;
+}
+.digit-group ::-moz-placeholder {
+  font-weight: 900;
+  color: #9c9a9a;
+}
 
 
 /* --- Products Section --- */
@@ -354,4 +399,5 @@ input[type="submit"]:disabled {
     font-size: 200px;
   }
 }
+
 
