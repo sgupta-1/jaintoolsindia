@@ -31,18 +31,19 @@
 .navbar-brand {
   font-weight: 500;
 }
-.navlogsign .signup{
+.navlogsign .signup {
   background-color: #149279;
   border-color: #149279;
 }
-.navlogsign .signup:hover{
+.navlogsign .signup:hover {
   background-color: #12806a;
 }
-.navlogsign .login{
+.navlogsign .login {
   color: #149279;
   border-color: #149279;
 }
-.navlogsign .login:hover,.navlogsign .login:focus{
+.navlogsign .login:hover,
+.navlogsign .login:focus {
   background-color: #149279;
   color: white;
 }
@@ -240,70 +241,62 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .carousel-main {
+  .carousel > .carousel-item > .carousel-image {
     height: 650px;
   }
-  .carousel-image {
+  .carousel > .carousel-item > .carousel-image {
     height: 650px;
     object-fit: fill;
   }
 }
 @media screen and (min-width: 768px) {
-  .carousel-main {
+  .carousel > .carousel-item > .carousel-image {
     height: 650px;
   }
-  .carousel-image {
+  .carousel > .carousel-item > .carousel-image {
     height: 650px;
     object-fit: fill;
   }
 }
-/* @media screen and (min-width: 992px) {
-  .carousel-main2 {
-    height: 250px;
-  }
-  .carousel-image2 {
-    height: 250px;
-    object-fit: fill;
-  }
-} */
-
 
 /* --- Login Section --- */
 
-.btnlog{
-  padding-left: 2.5rem; padding-right: 2.5rem;
+.btnlog {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   background-color: #149279;
   border-color: #149279;
 }
-.iconic{
+.iconic {
   background-color: #149279;
 }
-.iconic:hover, .iconic:focus{
+.iconic:hover,
+.iconic:focus {
   background-color: #12806a;
 }
-.btnlog:hover, .btnlog:focus{
+.btnlog:hover,
+.btnlog:focus {
   background-color: #12806a;
   border-color: #149279;
 }
 .divider:after,
 .divider:before {
-content: "";
-flex: 1;
-height: 2px;
-background: rgb(201, 201, 201);
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: rgb(201, 201, 201);
 }
-.simpletext{
+.simpletext {
   font-size: 30px;
 }
 .h-custom {
-height: calc(100% - 30px);
+  height: calc(100% - 30px);
 }
 @media (max-width: 450px) {
-.h-custom {
-height: 100%;
+  .h-custom {
+    height: 100%;
+  }
 }
-}
-
 
 /* --- Sign-up Section --- */
 
@@ -311,7 +304,7 @@ input[type="submit"]:disabled {
   background-color: #149279;
   border-color: #149279;
 }
-.mt{
+.mt {
   margin: 5rem 0px;
 }
 .digit-group input {
@@ -352,7 +345,6 @@ color: white;
   font-weight: 900;
   color: #9c9a9a;
 }
-
 
 /* --- Products Section --- */
 
