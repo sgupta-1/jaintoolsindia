@@ -14,7 +14,7 @@ export default function Home() {
       <div className="slideanim1">
         <div
           id="carouselDark"
-          className="carousel carousel-light carousel-fade slide carousel-main"
+          className="carousel carousel-light carousel-fade slide"
           data-bs-ride="carousel"
         >
           <div className="carousel-indicators">
@@ -69,28 +69,44 @@ export default function Home() {
               data-bs-interval="2000"
               data-touch="true"
             >
-              <img src={img2} className="d-block w-100 " alt="..." />
+              <img
+                src={img2}
+                className="d-block w-100 carousel-image"
+                alt="..."
+              />
             </div>
             <div
               className="carousel-item"
               data-touch="true"
               data-bs-interval="2000"
             >
-              <img src={img3} className="d-block w-100 " alt="..." />
+              <img
+                src={img3}
+                className="d-block w-100 carousel-image"
+                alt="..."
+              />
             </div>
             <div
               className="carousel-item"
               data-touch="true"
               data-bs-interval="2000"
             >
-              <img src={img4} className="d-block w-100 " alt="..." />
+              <img
+                src={img4}
+                className="d-block w-100 carousel-image"
+                alt="..."
+              />
             </div>
             <div
               className="carousel-item"
               data-touch="true"
               data-bs-interval="2000"
             >
-              <img src={img5} className="d-block w-100 " alt="..." />
+              <img
+                src={img5}
+                className="d-block w-100 carousel-image"
+                alt="..."
+              />
             </div>
           </div>
         </div>
