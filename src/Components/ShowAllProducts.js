@@ -3,15 +3,13 @@ import React, { useEffect, useState } from "react";
 import { cat } from "./Products";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
-export default function ShowHeros() {
+export default function ShowAllProducts() {
   const navigate = useNavigate();
+  const [prodData, setProdsData] = useState([]);
+
   const navigateScreen = () => {
     navigate("/products");
   };
-  if (cat === undefined) {
-    navigateScreen();
-  }
-  const [prodData, setProdsData] = useState([]);
   const selectedId = [];
   useEffect(() => {
     const getData = async () => {
@@ -33,6 +31,11 @@ export default function ShowHeros() {
     }
     // console.log(selectedId)
   };
+  useEffect(() => {
+    if (cat === undefined) {
+      navigateScreen();
+    }
+  });
   return (
     <>
       <Navbar />
@@ -52,7 +55,7 @@ export default function ShowHeros() {
         </button>
       </form>
       <h1 className="display-4 fw-normal text-uppercase text-center">{cat}</h1>
-      <div className="row row-cols-1 mx-3 row-cols-sm-2 row-cols-md-4 ">
+      <div className="row row-cols-1 mx-3 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
         {prodData.map((item, index) => {
           return <HeroView item={item} key={item._id} setId={setId} />;
         })}
@@ -67,8 +70,8 @@ const HeroView = (props) => {
       {/* <!-- Card --> */}
       <div className="card">
         {/* <!--Card image--> */}
-        <div className="view overlay">
-          <img src={props.item.pic} className="w-100 rounded-top" alt="" />
+        <div className="view overlay m-auto">
+          <img src={props.item.pic} className="prodimg rounded-top" alt="" />
           <a href="#!">
             <div className="mask rgba-white-slight"></div>
           </a>
@@ -77,10 +80,10 @@ const HeroView = (props) => {
         {/* <!--Card content--> */}
         <div className="card-body">
           {/* <!--Title--> */}
-          <h5>{props.item.name}</h5>
-          <div className="mb-2 text-muted small">
+          <h6 className="text-uppercase">{props.item.name}</h6>
+          {/* <div className="mb-2 text-muted small">
             <p className=" mb-4 mb-md-0">{props.item.desc}</p>
-          </div>
+          </div> */}
           <div className="d-flex flex-row align-items-center mb-1">
             <h4 className="mb-1 me-1">&#x20b9; {props.item.price}</h4>
           </div>

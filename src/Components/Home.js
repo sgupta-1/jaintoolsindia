@@ -6,6 +6,7 @@ import img2 from "../img/carousel/2.jpg";
 import img3 from "../img/carousel/7.jpg";
 import img4 from "../img/carousel/8.jpg";
 import img5 from "../img/carousel/9.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -108,6 +109,24 @@ export default function Home() {
                 alt="..."
               />
             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="slideanim1">
+          <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div className="col-md-5 p-lg-5 mx-auto my-5">
+              <h1 className="display-4 fw-normal">Our Products</h1>
+              <p className="lead fw-normal">
+                We offer you best quality items with competitve prices because
+                we value in building trust and satisfaction.
+              </p>
+              <Link to={"/Products"} className="btn btn-outline-secondary">
+                View Products
+              </Link>
+            </div>
+            <span className="fas fa-screwdriver screwdriver "></span>
+            <span className="fas fa-wrench wrench"></span>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/logo.png";
-import { useNavigate  } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <nav className="navbar sticky-top navbar-expand-lg bg-white shadow-sm ">
       <div className="container-fluid">
@@ -80,10 +80,19 @@ export default function Navbar() {
               placeholder="Search..."
               aria-label="Search"
             />
-        <input type="button" class="login btn btn-outline-primary me-2" value="Login" onClick={()=> navigate("/login")}/>
-        <input type="button" class="btn signup btn-primary" value="Sign-up" onClick={()=> navigate("/signup")}/>
+            <input
+              type="button"
+              className="login btn btn-outline-primary me-2"
+              value="Login"
+              onClick={() => navigate("/login")}
+            />
+            <input
+              type="button"
+              className="btn signup btn-primary"
+              value="Sign-up"
+              onClick={() => navigate("/signup")}
+            />
           </form>
-          
         </div>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
 /* --- Global Section --- */
 .slideanim1 {
   animation: 4s ease-out 0s 1 slidet;
@@ -22,7 +22,6 @@
     opacity: 1;
   }
 }
-
 /* --- Navbar Section --- */
 
 .nav-link {
@@ -315,7 +314,7 @@ input[type="submit"]:disabled {
   line-height: 50px;
   text-align: center;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: black;
   margin: 0 2px;
@@ -323,9 +322,9 @@ input[type="submit"]:disabled {
   border: 3px solid #293886;
 }
 .prompt {
-margin-bottom: 20px;
-font-size: 20px;
-color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
 }
 .digit-group ::-webkit-input-placeholder {
   /* Edge */
@@ -372,24 +371,46 @@ color: white;
     right: 0%;
     bottom: -15%;
     font-size: 300px;
+    z-index: -1;
   }
   .screwdriver {
     top: -25%;
     right: auto;
     left: 2%;
     font-size: 350px;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrench {
+    right: 0%;
+    bottom: -15%;
+    font-size: 250px;
+  }
+  .screwdriver {
+    top: -25%;
+    right: auto;
+    left: 2%;
+    font-size: 250px;
   }
 }
 @media screen and (max-width: 425px) {
   .wrench {
+    z-index: -1;
     right: 5%;
     bottom: -20%;
     font-size: 150px;
   }
   .screwdriver {
+    z-index: -1;
     top: -37%;
     font-size: 200px;
   }
 }
 
-
+.prodimg {
+  width: 200px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
