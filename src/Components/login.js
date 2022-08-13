@@ -48,6 +48,7 @@ export default function Login() {
       confirmationResult.confirm(otp).then((result) => {
         // User signed in successfully.
         const user = result.user;
+        console.log(user)
         // ...
       }).catch((error) => {
         // User couldn't sign in (bad verification code?)
