@@ -300,6 +300,9 @@ input[type="submit"]:disabled {
 .mt {
   margin: 5rem 0px;
 }
+.digit-group{
+  margin: 15px 0px;
+}
 .digit-group input {
   width: 60px;
   height: 60px;
@@ -314,11 +317,6 @@ input[type="submit"]:disabled {
   margin: 0 2px;
   border-radius: 18px;
   border: 3px solid #293886;
-}
-.prompt {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: white;
 }
 .digit-group ::-webkit-input-placeholder {
   /* Edge */
