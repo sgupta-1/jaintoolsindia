@@ -502,3 +502,14 @@ input[type="submit"]:disabled {
     clip-path: circle(50% at right -10%);
   }
 }
+
+.btn0 {
+  color: #149279;
+  font-weight: 500;
+  border-color: #149279;
+}
+.btn0:hover,
+.btn0:focus {
+  background-color: #1abc9c;
+  color: white;
+}
