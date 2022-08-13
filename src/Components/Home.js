@@ -4,8 +4,8 @@ import Footer from "./Footer";
 import img1 from "../img/carousel/5.jpg";
 import img2 from "../img/carousel/2.jpg";
 import img3 from "../img/carousel/7.jpg";
-import img4 from "../img/carousel/8.jpg";
-import img5 from "../img/carousel/9.jpg";
+import img4 from "../img/carousel/9.jpg";
+import img5 from "../img/carousel/8.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -13,15 +13,11 @@ export default function Home() {
     <>
       <Navbar />
       <div className="slideanim1">
-        <div
-          id="carouselDark"
-          className="carousel carousel-light carousel-fade slide"
-          data-bs-ride="carousel"
-        >
+        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselDark"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="0"
               className="active"
               aria-current="true"
@@ -29,89 +25,119 @@ export default function Home() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselDark"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselDark"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselDark"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="3"
               aria-label="Slide 4"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselDark"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="4"
               aria-label="Slide 5"
             ></button>
           </div>
-
           <div className="carousel-inner">
-            <div
-              className="carousel-item active"
-              data-bs-interval="1000"
-              data-touch="true"
-            >
-              <img
-                src={img1}
-                className="d-block w-100 carousel-image"
-                alt="..."
-              />
+            <div className="carousel-item active" data-interval="2000">
+              <div className="overlay-image">
+                <img src={img1} className="carousel-image" alt="" />
+              </div>
+              <div className="container cont">
+                <h1>Jain Tools India</h1>
+                <p className="w-50">
+                  JAIN TOOLS INDIA AND MAHAVEER TRADERS is one of the leading
+                  firm in the sector of hand tools since 1975 , Our motto is to
+                  serve the best products to the customers at resonable
+                  prices...
+                </p>
+                <Link
+                  to={"/about-us"}
+                  className="btn btn-lg btn-primary text-uppercase"
+                >
+                  Know More About Us
+                </Link>
+              </div>
             </div>
-            <div
-              className="carousel-item"
-              data-bs-interval="2000"
-              data-touch="true"
-            >
-              <img
-                src={img2}
-                className="d-block w-100 carousel-image"
-                alt="..."
-              />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img2} alt="" className="carousel-image" />
+              </div>
+              <div className="container cont">
+                <h1>Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis molestiae distinctio nemo similique neque
+                  magni facilis ab fuga magnam!
+                </p>
+                <a href="/" className="btn btn-lg btn-primary">
+                  Sign upp today
+                </a>
+              </div>
             </div>
-            <div
-              className="carousel-item"
-              data-touch="true"
-              data-bs-interval="2000"
-            >
-              <img
-                src={img3}
-                className="d-block w-100 carousel-image"
-                alt="..."
-              />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img className="carousel-image" src={img3} alt="" />
+              </div>
+              <div className="container cont">
+                <h1>Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis molestiae distinctio nemo similique neque
+                  magni facilis ab fuga magnam!
+                </p>
+                <a href="/" className="btn btn-lg btn-primary">
+                  Sign upp today
+                </a>
+              </div>
             </div>
-            <div
-              className="carousel-item"
-              data-touch="true"
-              data-bs-interval="2000"
-            >
-              <img
-                src={img4}
-                className="d-block w-100 carousel-image"
-                alt="..."
-              />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img4} alt="" className="carousel-image" />
+              </div>
+              <div className="container cont">
+                <h1>Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis molestiae distinctio nemo similique neque
+                  magni facilis ab fuga magnam!
+                </p>
+                <a href="/" className="btn btn-lg btn-primary">
+                  Sign upp today
+                </a>
+              </div>
             </div>
-            <div
-              className="carousel-item"
-              data-touch="true"
-              data-bs-interval="2000"
-            >
-              <img
-                src={img5}
-                className="d-block w-100 carousel-image"
-                alt="..."
-              />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img5} alt="" className="carousel-image" />
+              </div>
+              <div className="container cont">
+                <h1>Example headline</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque corporis molestiae distinctio nemo similique neque
+                  magni facilis ab fuga magnam!
+                </p>
+                <a href="/" className="btn btn-lg btn-primary">
+                  Sign upp today
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="my-4"></div>
+      </div>
+
+      <div className="my-4"></div>
       {/* <!-- Jumbotron --> */}
       {/* <div className="card card-image aboutusjumbo m-auto">
         <div className=" text-center rgba-stylish-strong py-5 px-4">
@@ -210,9 +236,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-    </div>
-</div>
-      
+      </div>
       <Footer />
     </>
   );

@@ -229,34 +229,28 @@
 }
 
 /* --- Home Section --- */
-
-@media screen and (min-width: 768px) {
-  .carousel-main {
-    height: 650px;
-  }
-  .carousel-image {
-    height: 650px;
-    object-fit: fill;
-  }
-}
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .carousel > .carousel-item > .carousel-image {
+    width: 100vw;
     height: 650px;
   }
   .carousel > .carousel-item > .carousel-image {
+    width: 100vw;
     height: 650px;
     object-fit: fill;
   }
 }
 @media screen and (min-width: 768px) {
   .carousel > .carousel-item > .carousel-image {
+    width: 100vw;
     height: 650px;
   }
   .carousel > .carousel-item > .carousel-image {
+    width: 100vw;
     height: 650px;
     object-fit: fill;
   }
-}
+} */
 
 /* --- Login Section --- */
 
@@ -512,4 +506,41 @@ input[type="submit"]:disabled {
 .btn0:focus {
   background-color: #1abc9c;
   color: white;
+}
+
+/* carousel new styles
+ */
+.carousel-item {
+  height: 32rem;
+  background: #000;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+.cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.carousel-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100vw;
 }
