@@ -13,13 +13,13 @@ export default function Home() {
     <>
       <Navbar />
       <div className="slideanim1">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -48,14 +48,14 @@ export default function Home() {
               aria-label="Slide 5"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="2000">
-              <div class="overlay-image">
-                <img src={img1} class="carousel-image" alt="" />
+          <div className="carousel-inner">
+            <div className="carousel-item active" data-interval="2000">
+              <div className="overlay-image">
+                <img src={img1} className="carousel-image" alt="" />
               </div>
-              <div class="container cont">
+              <div className="container cont">
                 <h1>Jain Tools India</h1>
-                <p class="w-50">
+                <p className="w-50">
                   JAIN TOOLS INDIA AND MAHAVEER TRADERS is one of the leading
                   firm in the sector of hand tools since 1975 , Our motto is to
                   serve the best products to the customers at resonable
@@ -63,72 +63,72 @@ export default function Home() {
                 </p>
                 <Link
                   to={"/about-us"}
-                  class="btn btn-lg btn-primary text-uppercase"
+                  className="btn btn-lg btn-primary text-uppercase"
                 >
                   Know More About Us
                 </Link>
               </div>
             </div>
-            <div class="carousel-item" data-interval="1000">
-              <div class="overlay-image">
-                <img src={img2} alt="" class="carousel-image" />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img2} alt="" className="carousel-image" />
               </div>
-              <div class="container cont">
+              <div className="container cont">
                 <h1>Example headline</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque corporis molestiae distinctio nemo similique neque
                   magni facilis ab fuga magnam!
                 </p>
-                <a href="/" class="btn btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-primary">
                   Sign upp today
                 </a>
               </div>
             </div>
-            <div class="carousel-item" data-interval="1000">
-              <div class="overlay-image">
-                <img class="carousel-image" src={img3} alt="" />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img className="carousel-image" src={img3} alt="" />
               </div>
-              <div class="container cont">
+              <div className="container cont">
                 <h1>Example headline</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque corporis molestiae distinctio nemo similique neque
                   magni facilis ab fuga magnam!
                 </p>
-                <a href="/" class="btn btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-primary">
                   Sign upp today
                 </a>
               </div>
             </div>
-            <div class="carousel-item" data-interval="1000">
-              <div class="overlay-image">
-                <img src={img4} alt="" class="carousel-image" />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img4} alt="" className="carousel-image" />
               </div>
-              <div class="container cont">
+              <div className="container cont">
                 <h1>Example headline</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque corporis molestiae distinctio nemo similique neque
                   magni facilis ab fuga magnam!
                 </p>
-                <a href="/" class="btn btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-primary">
                   Sign upp today
                 </a>
               </div>
             </div>
-            <div class="carousel-item" data-interval="1000">
-              <div class="overlay-image">
-                <img src={img5} alt="" class="carousel-image" />
+            <div className="carousel-item" data-interval="1000">
+              <div className="overlay-image">
+                <img src={img5} alt="" className="carousel-image" />
               </div>
-              <div class="container cont">
+              <div className="container cont">
                 <h1>Example headline</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque corporis molestiae distinctio nemo similique neque
                   magni facilis ab fuga magnam!
                 </p>
-                <a href="/" class="btn btn-lg btn-primary">
+                <a href="/" className="btn btn-lg btn-primary">
                   Sign upp today
                 </a>
               </div>
