@@ -38,7 +38,7 @@ export default function Contact() {
     };
     const newPostKey = push(child(ref(database), "posts")).key;
     const updates = {};
-    updates["/" + newPostKey] = obj;
+    updates["/contact-us" + newPostKey] = obj;
     setName("");
     setEmail("");
     setNumber("");
