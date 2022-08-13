@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
 /* --- Global Section --- */
 .slideanim1 {
   animation: 4s ease-out 0s 1 slidet;
@@ -22,7 +22,6 @@
     opacity: 1;
   }
 }
-
 /* --- Navbar Section --- */
 
 .nav-link {
@@ -315,7 +314,7 @@ input[type="submit"]:disabled {
   line-height: 50px;
   text-align: center;
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: black;
   margin: 0 2px;
@@ -323,9 +322,9 @@ input[type="submit"]:disabled {
   border: 3px solid #293886;
 }
 .prompt {
-margin-bottom: 20px;
-font-size: 20px;
-color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
 }
 .digit-group ::-webkit-input-placeholder {
   /* Edge */
@@ -371,13 +370,26 @@ color: white;
   .wrench {
     right: 0%;
     bottom: -15%;
-    font-size: 300px;
+    font-size: 20px;
   }
   .screwdriver {
     top: -25%;
     right: auto;
     left: 2%;
-    font-size: 350px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrench {
+    right: 0%;
+    bottom: -15%;
+    font-size: 150px;
+  }
+  .screwdriver {
+    top: -25%;
+    right: auto;
+    left: 2%;
+    font-size: 200px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -392,4 +404,103 @@ color: white;
   }
 }
 
+.prodimg {
+  width: 200px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutusjumbo {
+  background: linear-gradient(rgba(248, 248, 238, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/banner2.jpg") center/cover no-repeat;
+  z-index: 1;
+  border: none;
+  width: 90%;
+  height: 500px;
+}
+.aboutuswid {
+  margin: auto;
+  width: 90%;
+}
+.homeaboutbtn {
+  border: 1px solid;
+  background-color: #17a78a;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.homeaboutbtn:hover {
+  border: 1px solid;
+  background-color: white;
+  padding: 10px 20px;
+  color: #1abc9c;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
 
+.container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 100;
+}
+.container .row .card {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.container .row .card .card-body {
+  padding: 1rem 1.2rem;
+  color: black;
+}
+.container .row .card .card-body .card-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  transform: translateY(50px);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.container .row .card .card-body .name {
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.container .row .card .card-body .testimonial {
+  font-size: 0.9rem;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.container .row .card:hover .card-body .testimonial,
+.container .row .card:hover .card-body .name,
+.container .row .card:hover .card-body .card-img img {
+  transform: translateY(0px);
+  opacity: 1;
+}
+@media (max-width: 991.5px) {
+  body::after {
+    clip-path: circle(40% at 10% 50%);
+  }
+  body::before {
+    clip-path: circle(50% at right -10%);
+  }
+}
