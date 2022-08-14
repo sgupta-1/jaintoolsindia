@@ -88,14 +88,11 @@ const HeroView = (props) => {
             <h4 className="mb-1 me-1">&#x20b9; {props.item.price}</h4>
           </div>
           <div className="d-flex flex-column mt-4">
-            <button className="btn btn-primary btn-sm" type="button">
-              Details
-            </button>
             <button
-              className="btn btn-outline-primary btn-sm mt-2"
+              className="btn btn-outline-primary btn-sm mt-2 btn0"
               type="button"
             >
-              Add to wishlist
+              Add to Cart
             </button>
           </div>
         </div>
