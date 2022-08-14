@@ -596,7 +596,7 @@ export default function Products() {
                 {/* <!-- Provides extra visual weight and identifies the primary action in a set of buttons --> */}
                 <button
                   type="button"
-                  className="btn btn-light-blue btn-md"
+                  className="btn btn-light-blue btn-md btn0"
                   onClick={() =>
                     navigateScreen("/showallproducts", "Allen Key")
                   }
