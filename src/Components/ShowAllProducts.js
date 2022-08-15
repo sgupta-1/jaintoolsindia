@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 export default function ShowAllProducts() {
   const navigate = useNavigate();
   const [prodData, setProdsData] = useState([]);
-
   const navigateScreen = () => {
     navigate("/products");
   };
@@ -63,8 +62,26 @@ export default function ShowAllProducts() {
     </>
   );
 }
-
 const HeroView = (props) => {
+  const addToCart = (e) => {
+    e.preventDefault();
+    let data = {
+      _id: props.item.id,
+      name: props.item.name,
+      price: props.item.price,
+      category: props.item.category,
+      pic: props.item.pic,
+      value: 1,
+    };
+    const response = axios.post("http://localhost:8080/cart", data);
+    response
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((error) => {
+        error.send(alert("item already exist"));
+      });
+  };
   return (
     <div className="col mb-4">
       {/* <!-- Card --> */}
@@ -86,11 +103,13 @@ const HeroView = (props) => {
           </div> */}
           <div className="d-flex flex-row align-items-center mb-1">
             <h4 className="mb-1 me-1">&#x20b9; {props.item.price}</h4>
+            {/* <h4 className="d-none">{props.item.category}</h4> */}
           </div>
           <div className="d-flex flex-column mt-4">
             <button
               className="btn btn-outline-primary btn-sm mt-2 btn0"
               type="button"
+              onClick={addToCart}
             >
               Add to Cart
             </button>
