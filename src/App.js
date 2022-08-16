@@ -11,6 +11,7 @@ import Cart from "./Components/Cart";
 
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/cart" element={<Cart />} />
       </Routes>
     </Router>
+    </>
   );
 }
 
