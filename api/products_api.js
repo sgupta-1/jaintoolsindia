@@ -14,7 +14,7 @@ app.use(cors());
 app.use(body_parser.urlencoded({ extended: true }));
 app.use(body_parser.json());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.get("/products", async (req, res) => {
   let filter;
@@ -63,4 +63,6 @@ app.get("*", (req, res) => {
   res.status(404).send({ msg: "usrl Not found" });
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`port listening on PORT http://localhost:${PORT}`);
+});

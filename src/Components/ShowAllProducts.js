@@ -13,7 +13,7 @@ export default function ShowAllProducts() {
   useEffect(() => {
     const getData = async () => {
       await axios
-        .get(`http://localhost:8080/products?categories=${cat}`)
+        .get(`https://jtiapi.herokuapp.com/products?categories=${cat}`)
         .then((res) => {
           setProdsData(res.data);
         });
@@ -73,7 +73,7 @@ const HeroView = (props) => {
       pic: props.item.pic,
       value: 1,
     };
-    const response = axios.post("http://localhost:8080/cart", data);
+    const response = axios.post("https://jtiapi.herokuapp.com/cart", data);
     response
       .then((res) => {
         alert("added to cart");

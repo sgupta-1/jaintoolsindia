@@ -6,7 +6,7 @@ export default function Cart() {
   const selectedId = [];
   useEffect(() => {
     const getData = async () => {
-      await axios.get("http://localhost:8080/cart").then((res) => {
+      await axios.get("https://jtiapi.herokuapp.com/cart").then((res) => {
         setcartsData(res.data);
       });
     };
@@ -86,7 +86,7 @@ const CartView = (props) => {
   const handleSubmit = () => {
     if (Number(num) > 1) {
       const response = axios.put(
-        `http://localhost:8080/cart/${props.item._id}`,
+        `https://jtiapi.herokuapp.com/cart/${props.item._id}`,
         {
           value: Number(num) - 1,
           price: (Number(num) - 1) * props.item.price,
@@ -104,10 +104,13 @@ const CartView = (props) => {
     }
   };
   const handleSubmit2 = () => {
-    const response = axios.put(`http://localhost:8080/cart/${props.item._id}`, {
-      value: Number(num) + 1,
-      price: (Number(num) + 1) * props.item.price,
-    });
+    const response = axios.put(
+      `https://jtiapi.herokuapp.com/cart/${props.item._id}`,
+      {
+        value: Number(num) + 1,
+        price: (Number(num) + 1) * props.item.price,
+      }
+    );
     response
       .then((res) => {
         console.log("updated");
@@ -129,7 +132,7 @@ const CartView = (props) => {
   };
   const deleteHandler = () => {
     const response = axios.delete(
-      `http://localhost:8080/cart/${props.item._id}`
+      `https://jtiapi.herokuapp.com/cart/${props.item._id}`
     );
     response
       .then((res) => {
