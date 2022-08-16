@@ -45,9 +45,6 @@ export default function Products() {
               We offer you best quality items with competitve prices because we
               value in building trust and satisfaction.
             </p>
-            <a className="btn btn-outline-secondary" href="#products">
-              Know More
-            </a>
           </div>
           <span className="fas fa-screwdriver screwdriver "></span>
           <span className="fas fa-wrench wrench"></span>
