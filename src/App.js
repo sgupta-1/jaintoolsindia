@@ -8,9 +8,9 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import ShowAllProducts from "./Components/ShowAllProducts";
 
-
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -22,6 +22,7 @@ function App() {
         <Route exact path="/showallproducts" element={<ShowAllProducts />} />
       </Routes>
     </Router>
+    </>
   );
 }
 
