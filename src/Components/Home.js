@@ -205,7 +205,7 @@ export default function Home() {
                     alt=""
                   />{" "}
                 </div>
-                <div className="name h5">Shobha Jain</div>
+                <div className="name h5">VSKODE</div>
                 <div className="testimonial">
                   {" "}
                   I made bacck the purchase price in just 48 hours ! Thank you

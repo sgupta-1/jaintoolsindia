@@ -9,12 +9,12 @@ const addProduct = async (object) => {
 
 const updateProduct = async (id, object) => {
   const cart = await getCollection("cart");
-  return await cart.findOneAndUpdate({ _id: ObjectId(id) }, { $set: object });
+  return await cart.findOneAndUpdate({ _id: id }, { $set: object });
 };
 
 const deleteProduct = async (id) => {
   const cart = await getCollection("cart");
-  return await cart.deleteOne({ _id: ObjectId(id) });
+  return await cart.deleteOne({ _id: id });
 };
 
 const getAllProducts = async (object) => {

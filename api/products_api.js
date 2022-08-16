@@ -49,7 +49,9 @@ app.put("/cart/:id", async (req, res) => {
   res.send(result);
 });
 app.delete("/cart/:id", async (req, res) => {
-  const result = await deleteProduct(req.params.id);
+  const ids = req.params.id;
+  const result = await deleteProduct(ids);
+  console.log(ids);
   if (result.deletedCount === 0) {
     res.send({ msg: "Product not in cart" });
   } else {
@@ -61,4 +63,4 @@ app.get("*", (req, res) => {
   res.status(404).send({ msg: "usrl Not found" });
 });
 
-app.listen(8080);
+app.listen(PORT);
