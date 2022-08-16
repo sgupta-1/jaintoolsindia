@@ -27,8 +27,9 @@ export default function About() {
   <div className="row">
     <div className="col-sm-8">
       <h2>About Our Company</h2><br/>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4>JAIN TOOLS started in 1975</h4><br/>
+      <p>We are an Asia-based leading Firm intensively inclined toward B2B procurement of industrial supplies, in particular Hand Tools such as Pliers, Screwdrivers, Spanners, Toolkit, Blade, Allen key, Sockets, Measuring Tapes, Wire cutter, Wrench Set. 
+We take pride in delivering world-class services and our clients are well aware of the fact that we do not just deliver products; we deliver a satisfying experience, which has enables us to forge relationship with our customers.</p>
       <br/><button className="btn btn-info btn-lg" onClick={()=>navigate("/contact-us")}>Get in Touch</button>
     </div>
     <div className="col-sm-4">
@@ -44,9 +45,13 @@ export default function About() {
     </div>
     <div className="col-sm-8">
       <h2>Our Values</h2><br/>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br/>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h4><strong>MISSION:</strong> Our mission is to serve the best products to the customers at a very competitive price.</h4><br/>
+      <p><strong>VISION:</strong><br/><br/>
+      You are safe, sure, efficient and economical with `Jain India Tools`.<br/>
+      Jain India Tools is a one stop source for all kinds and varieties of Hand tools.<br/>
+      Jain India Hand tools give its customers the best value for money.<br/>
+      Jain India Tools are tool makers to the Nation.<br/>
+      Switch to Jain Tools and experience the difference.</p>
     </div>
   </div>
 </div>
