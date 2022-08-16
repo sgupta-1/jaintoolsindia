@@ -1,9 +1,6 @@
-import { dblClick } from "@testing-library/user-event/dist/click";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import { useLocation } from "react-router-dom";
-import { total } from "./ShowAllProducts";
 export default function Cart() {
   const [cartData, setcartsData] = useState([]);
   const selectedId = [];
@@ -97,7 +94,7 @@ const CartView = (props) => {
       );
       response
         .then((res) => {
-          console.log(res.data);
+          console.log("updated");
         })
         .catch((error) => {
           console.log(error);
@@ -113,7 +110,7 @@ const CartView = (props) => {
     });
     response
       .then((res) => {
-        console.log(res.data);
+        console.log("updated");
       })
       .catch((error) => {
         console.log(error);
@@ -136,10 +133,13 @@ const CartView = (props) => {
     );
     response
       .then((res) => {
+        // console.log(props.item._id);
+        console.log("deleted");
         window.location.reload();
       })
       .catch((error) => {
         console.log(error);
+        // console.log(props.item._id);
       });
   };
   return (

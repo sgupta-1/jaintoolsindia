@@ -1,5 +1,6 @@
 const { MongoClient } = require("mongodb");
-const url = "mongodb://localhost:27017";
+const url =
+  "mongodb+srv://jaintoolsindia:9968523780@cluster0.ytyvl6e.mongodb.net/products?retryWrites=true&w=majority";
 
 const getDb = () => {
   const client = new MongoClient(url);

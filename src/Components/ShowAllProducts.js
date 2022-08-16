@@ -66,7 +66,7 @@ const HeroView = (props) => {
   const addToCart = (e) => {
     e.preventDefault();
     let data = {
-      _id: props.item.id,
+      _id: props.item._id,
       name: props.item.name,
       price: props.item.price,
       category: props.item.category,
@@ -76,7 +76,7 @@ const HeroView = (props) => {
     const response = axios.post("http://localhost:8080/cart", data);
     response
       .then((res) => {
-        console.log(res.data);
+        alert("added to cart");
       })
       .catch((error) => {
         error.send(alert("item already exist"));
