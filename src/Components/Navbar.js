@@ -74,6 +74,12 @@ export default function Navbar() {
             </li>
           </ul>
           <form className="d-flex navlogsign" role="search">
+            <button
+              className="login btn btn-outline-primary me-2"
+              onClick={() => navigate("/cart")}
+            >
+              <i className="fas fa-shopping-cart"></i>
+            </button>
             <input
               className="form-control me-2"
               type="search"

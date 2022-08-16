@@ -300,7 +300,7 @@ input[type="submit"]:disabled {
 .mt {
   margin: 5rem 0px;
 }
-.digit-group{
+.digit-group {
   margin: 15px 0px;
 }
 .digit-group input {
@@ -440,63 +440,6 @@ input[type="submit"]:disabled {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-
-.container {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 100;
-}
-.container .row .card {
-  width: 300px;
-  height: 300px;
-  margin: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  cursor: pointer;
-}
-.container .row .card .card-body {
-  padding: 1rem 1.2rem;
-  color: black;
-}
-.container .row .card .card-body .card-img img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  transform: translateY(50px);
-  transition: 0.5s;
-  border-radius: 50%;
-}
-.container .row .card .card-body .name {
-  transform: translateY(50px);
-  transition: 0.5s;
-}
-.container .row .card .card-body .testimonial {
-  font-size: 0.9rem;
-  pointer-events: none;
-  transform: translateY(10px);
-  transition: 0.5s;
-  opacity: 0;
-}
-.container .row .card:hover .card-body .testimonial,
-.container .row .card:hover .card-body .name,
-.container .row .card:hover .card-body .card-img img {
-  transform: translateY(0px);
-  opacity: 1;
-}
-@media (max-width: 991.5px) {
-  body::after {
-    clip-path: circle(40% at 10% 50%);
-  }
-  body::before {
-    clip-path: circle(50% at right -10%);
-  }
-}
-
 .btn0 {
   color: #149279;
   font-weight: 500;
@@ -543,4 +486,110 @@ input[type="submit"]:disabled {
   background-repeat: no-repeat;
   height: 650px;
   width: 100vw;
+}
+
+.conta {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 100;
+}
+.conta .row .card {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.conta .row .card .card-body {
+  padding: 1rem 1.2rem;
+  color: black;
+}
+.conta .row .card .card-body .card-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  transform: translateY(50px);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.conta .row .card .card-body .name {
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.conta .row .card .card-body .testimonial {
+  font-size: 0.9rem;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.conta .row .card:hover .card-body .testimonial,
+.conta .row .card:hover .card-body .name,
+.conta .row .card:hover .card-body .card-img img {
+  transform: translateY(0px);
+  opacity: 1;
+}
+@media (max-width: 991.5px) {
+  body::after {
+    clip-path: circle(40% at 10% 50%);
+  }
+  body::before {
+    clip-path: circle(50% at right -10%);
+  }
+}
+
+/* cart */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+.carts-color {
+  background-color: rgba(251, 251, 251, 0.2);
+}
+.carts-size {
+  max-width: 300px;
+}
+
+.cart-img {
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (mix-width: 992px) {
+  .cart-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .cart-img {
+    width: 100%;
+    height: 250px;
+  }
+  .cart-quant {
+    margin: auto;
+  }
 }
